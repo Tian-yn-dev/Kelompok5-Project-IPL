@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleta2.css">
+    <link rel="stylesheet" href="styleta1.css">
     <title>TA1  </title>
 </head>
 <body>
-    <form action="action_page.php" style="border:1px solid #ccc">
+  <form action="ta2.php" method="POST">
+    <form action="" >
         <div class="container">
           <nav class="menu">
             <ul>
@@ -22,6 +23,9 @@
               </li>
               <li>
                 <a href="pembimbing.html">Pembimbing</a>
+              </li>
+              <li>
+                <a href="Index.html">Logout</a>
               </li>
             </ul>
           </nav>
@@ -48,19 +52,21 @@
 
           <label for="text"><b>Judul</b></label>
           <input type="text" placeholder="Masukkan Judul" name="judul" required>
-
-            <select class="custom-select ">
-              <option selected>Pilih Dosen Pembimbing </option>
-              <option value="1">Prof.Firza</option>
-              <option value="2">Prof.Ali</option>
-              <option value="3">Prof.Siska</option>
-              <option value="4">Prof.Caca</option>
+          <label for="text"><b>Pilih Pembimbing</b></label>
+            <select class="custom-select" name="pembimbing" required>
+               <option value="" selectedhidden>Pembimbing </option>
+               <option value="Prof.Firza">Prof.Firza</option>
+               <option value="Prof.Ali">Prof.Ali</option>
+               <option value="Prof.Siska">Prof.Siska</option>
+               <option value="Prof.Caca">Prof.Caca</option>
             </select>
 
           <div class="clearfix">
             <button type="submit" class="sendbtn">Send</button>
           </div>
+          
         </div>
       </form>
+    </form>
 </body>
 </html>

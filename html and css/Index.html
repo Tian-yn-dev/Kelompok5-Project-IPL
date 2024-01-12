@@ -8,24 +8,29 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
+
+ <form action="login.php" method="POST">
     <div class="wrapper">
         <form action="">
-            <h1>Login</h1>
+            <h1>LOGIN</h1>
             <div class="input-box">
-            <input type="text" placeholder="Nim" required>
+            <input type="text" name="nim" placeholder="Nim Anda" required>
             <i class='bx bx-user'></i>
         </div> 
             <div class="input-box">
-            <input type="password" placeholder="Password" required>
+            <input type="password" name="password" placeholder="Password" required>
             <i class='bx bx-lock'></i>
         </div> 
-
+        <a href="home.html">
         <button type="submit" class="btn">Login</button>
+         </a>
         <div class="register-link">
              <a href="Register.html">Register</a>
         </div>
         </form>
+    </div>
+</form> 
+
     </div>
 
 </body>
